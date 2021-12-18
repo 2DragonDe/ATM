@@ -1,0 +1,128 @@
+<div class="card card-signup card-plain">
+    <div class="modal-header">
+        <div class="card-header card-header-primary text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="material-icons">clear</i>
+            </button>
+            <h4 class="card-title">{{ location.name }}</h4>
+        </div>
+    </div>
+    <div class="modal-body">
+        <form class="form" method="" action="">
+            <p class="description text-center">Thông tin chi tiết về điểm lắp đặt</p>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left ">
+                            <i class="material-icons">location_on</i> Địa Điểm
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.street }} - {{ location.ward.name }} - {{ location.district.name }} - {{ location.city.name }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">apartment</i> Đơn Vị Quản Lý
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.manager.name }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">layers</i> Số Lượng ATM/CDM
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.number }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">room_preferences</i> Kiểu Lắp Đặt
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.get_setup_display }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">pin_drop</i> Vị Trí Lắp Đặt
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.get_area_display }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">support_agent</i> Số Điện Thoại CN/PGD
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.contact01 }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">contact_phone</i> Số Điện Thoại Công Ty
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.contact02 }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left">
+                            <i class="material-icons">stay_primary_portrait</i> Nhân Viên Tại Chỗ
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.contact03 }}
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="btn btn-warning btn-atm text-left ">
+                            <i class="material-icons">stay_primary_portrait</i> Nhân Viên Tại Chỗ
+                        </span>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="btn btn-info">
+                            {{ location.contact04 }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+</div>
